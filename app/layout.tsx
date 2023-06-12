@@ -12,7 +12,7 @@ import SearchModal from './components/modals/SearchModal'
 const font = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Noszvaj Airbnb',
+  title: 'Airbnb - Nagy Péter',
   description: 'Airbnb clone',
 }
 
@@ -21,6 +21,9 @@ export default async function RootLayout({ children, }: { children: React.ReactN
 
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/images/favicon.ico' />
+      </head>
       <body className={font.className}>
         <ToasterProvider />
         <RegisterModal />
